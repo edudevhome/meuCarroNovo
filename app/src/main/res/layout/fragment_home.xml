@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chevrolet" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:src="@drawable/fiatt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:src="@drawable/honda" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:src="@drawable/ford" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:src="@drawable/nissan" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/hynn" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/toyota" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/volkswagen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/peugeoot" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/renault" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -168,29 +168,49 @@
 
 
 
-       <!--<item></item>
 
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>-->
-        <!--<item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>-->
+    <string-array name="veiculosRenault_array">
+
+        <item>Selecione o modelo do veículo!</item>
+        <item>CLIO</item>
+        <item>KWID</item>
+        <item>LOGAN</item>
+        <item>SANDERO</item>
+        <item>SANDERO R.S.</item>
+        <item>STEPWAY</item>
+        <item>ZOE</item>
 
 
+    </string-array>
+
+
+
+        <string-array name="veiculosToyota_array">
+
+        <item>Selecione o modelo do veículo!</item>
+        <item>ETIOS HATCH</item>
+        <item>ETIOS SEDAN</item>
+        <item>YARIS HATCH</item>
+        <item>YARIS SEDAN</item>
+
+
+    </string-array>
+
+    <string-array name="veiculosVolkswagen_array">
+        <item>Selecione o modelo do veículo!</item>
+        <item>CROSSFOX</item>
+        <item>FOX</item>
+        <item>GOL</item>
+        <item>GOLF</item>
+        <item>NOVO POLO</item>
+        <item>NOVO UP!</item>
+        <item>SPACE CROSS</item>
+        <item>SPACEFOX</item>
+        <item>VIRTUS</item>
+        <item>VOYAGE</item>
+
+
+    </string-array>
 
 
 </resources>

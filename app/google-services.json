@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "837565271805",
+    "firebase_url": "https://meu-carro-novo-81bf2.firebaseio.com",
+    "project_id": "meu-carro-novo-81bf2",
+    "storage_bucket": "meu-carro-novo-81bf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837565271805:android:6ccc17fb564b126e293894",
+        "android_client_info": {
+          "package_name": "com.devhome.eduardobastos.bastosconsultoria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837565271805-iof6rck4rcr7c1jq1qi33qr9racvckok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devhome.eduardobastos.bastosconsultoria",
+            "certificate_hash": "7a675611ebd7cd251d34b20f5eaa0d7778bcc938"
+          }
+        },
+        {
+          "client_id": "837565271805-7hk7r3btaum14578pkqqk0rte7703vsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6sm8B2gakDortPMEj0H8_qFSrKL8AElA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837565271805-7hk7r3btaum14578pkqqk0rte7703vsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

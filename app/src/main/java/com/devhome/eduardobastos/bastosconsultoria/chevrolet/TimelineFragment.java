@@ -7,7 +7,11 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
@@ -23,6 +27,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.devhome.eduardobastos.bastosconsultoria.R;
+import com.devhome.eduardobastos.bastosconsultoria.home.HomeFragment;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.material.navigation.NavigationView;
 
 import mehdi.sakout.aboutpage.AboutPage;
 
@@ -35,9 +44,23 @@ public class TimelineFragment extends Fragment  {
     private TimelineViewModel timelineViewModel;
     private Spinner spinner;
     private ImageView imageView;
+    private AdView adView;
+
+    DrawerLayout mDrawerLayout;
+    ActionBarDrawerToggle mDrawerToogle;
+    private String barra;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
+        MobileAds.initialize(getContext(), "3940256099942544~3347511713");
+
+        AdView adView = new AdView(getContext());
+        adView.setAdSize(AdSize.BANNER);
+        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+
 
         timelineViewModel =
                 ViewModelProviders.of(this).get(TimelineViewModel.class);
@@ -55,6 +78,8 @@ public class TimelineFragment extends Fragment  {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
+
+
 
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

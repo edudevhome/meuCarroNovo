@@ -9,19 +9,20 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
+import com.devhome.eduardobastos.bastosconsultoria.avaliarComentar.SettingsFragment;
 import com.devhome.eduardobastos.bastosconsultoria.chevrolet.TimelineFragment;
 import com.devhome.eduardobastos.bastosconsultoria.fiat.SchoolFragment;
 import com.devhome.eduardobastos.bastosconsultoria.ford.WorkFragment;
 import com.devhome.eduardobastos.bastosconsultoria.home.HomeFragment;
 import com.devhome.eduardobastos.bastosconsultoria.honda.HondaFragment;
 import com.devhome.eduardobastos.bastosconsultoria.hyundai.HyundaiFragment;
+import com.devhome.eduardobastos.bastosconsultoria.maisApps.LogoutFragment;
 import com.devhome.eduardobastos.bastosconsultoria.nissan.NissanFragment;
 import com.devhome.eduardobastos.bastosconsultoria.peugeot.PeugeotFragment;
 import com.devhome.eduardobastos.bastosconsultoria.renault.RenaultFragment;
@@ -263,19 +264,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else
             if (id == R.id.settings) {
 
+                String home = "AVALIAR E COMENTAR";
+                Toolbar toolbar = findViewById(R.id.toolbar);
+                toolbar.setTitle(home);
+                setSupportActionBar(toolbar);
 
 
             SettingsFragment fragment = new SettingsFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame_layout, fragment, "Settings");
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "AVALIAR E COMENTAR");
             fragmentTransaction.commit();
+
+                mDrawerLayout = findViewById(R.id.drawerLayout);
+                mDrawerToogle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,
+                        R.string.open, R.string.close);
+
         } else
             if (id == R.id.logout) {
 
+                String home = "MAIS APLICATIVOS";
+                Toolbar toolbar = findViewById(R.id.toolbar);
+                toolbar.setTitle(home);
+                setSupportActionBar(toolbar);
+
             LogoutFragment fragment = new LogoutFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame_layout, fragment, "Logout");
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "MAIS APLICATIVOS");
             fragmentTransaction.commit();
+
+                mDrawerLayout = findViewById(R.id.drawerLayout);
+                mDrawerToogle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,
+                        R.string.open, R.string.close);
 
         }
 

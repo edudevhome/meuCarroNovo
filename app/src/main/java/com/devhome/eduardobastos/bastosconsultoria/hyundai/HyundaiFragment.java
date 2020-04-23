@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.devhome.eduardobastos.bastosconsultoria.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 
 /**
@@ -17,6 +20,7 @@ import com.devhome.eduardobastos.bastosconsultoria.R;
  */
 public class HyundaiFragment extends Fragment {
 
+    private AdView bannerAd;
 
     public HyundaiFragment() {
         // Required empty public constructor
@@ -26,6 +30,8 @@ public class HyundaiFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_hyundai, container, false);
     }

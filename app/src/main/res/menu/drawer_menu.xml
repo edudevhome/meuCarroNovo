@@ -77,14 +77,14 @@
 
             <item
                 android:id="@+id/settings"
-                android:title="Settings"
-                android:icon="@drawable/ic_action_settings"
+                android:title="Avaliar e Comentar"
+                android:icon="@drawable/ic_star_black_24dp"
                 />
 
             <item
                 android:id="@+id/logout"
-                android:title="Logout"
-                android:icon="@drawable/ic_action_logout"
+                android:title="Mais Aplicativos"
+                android:icon="@drawable/ic_store_black_24dp"
                 />
 
         </menu>

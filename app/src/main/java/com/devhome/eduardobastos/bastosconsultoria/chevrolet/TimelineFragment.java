@@ -22,15 +22,21 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.devhome.eduardobastos.bastosconsultoria.R;
 import com.devhome.eduardobastos.bastosconsultoria.home.HomeFragment;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdLoader;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.formats.NativeAdOptions;
+import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.material.navigation.NavigationView;
 
 import mehdi.sakout.aboutpage.AboutPage;
@@ -44,22 +50,16 @@ public class TimelineFragment extends Fragment  {
     private TimelineViewModel timelineViewModel;
     private Spinner spinner;
     private ImageView imageView;
-    private AdView adView;
-
-    DrawerLayout mDrawerLayout;
-    ActionBarDrawerToggle mDrawerToogle;
-    private String barra;
+    private AdView bannerAd;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
-        MobileAds.initialize(getContext(), "3940256099942544~3347511713");
+        MobileAds.initialize(getContext(), "@string/chevrolet_banner");
 
-        AdView adView = new AdView(getContext());
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+
 
 
         timelineViewModel =
@@ -67,9 +67,14 @@ public class TimelineFragment extends Fragment  {
         View root = inflater.inflate(R.layout.fragment_timeline, container, false);
         final TextView textView = root.findViewById(R.id.text_timeline);
 
+
         spinner = root.findViewById(R.id.veiculosChevrolet_spinner);
 
         imageView = root.findViewById(R.id.imageVeiculo);
+
+        bannerAd = root.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        bannerAd.loadAd(adRequest);
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
@@ -88,7 +93,11 @@ public class TimelineFragment extends Fragment  {
                 switch (position) {
 
                     case 0:
-                        //Toast.makeText(parent.getContext(), "AGILE SELECIONADO", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(parent.getContext(), "NENHUM MODELO SELECIONADO",
+                                Toast.LENGTH_LONG).show();
+
+                        imageView.setImageResource(R.drawable.vazio);
+
                         break;
 
                     case 1:
@@ -407,5 +416,6 @@ public class TimelineFragment extends Fragment  {
         });
         return root;
     }
+
 }
 

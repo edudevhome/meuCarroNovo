@@ -1,4 +1,20 @@
 <resources>
+
+    <string name="appId">ca-app-pub-8069899346555474~2861505166</string>
+    <string name="chevrolet_banner">ca-app-pub-8069899346555474/4304510977</string>
+    <string name="fiat_banner">ca-app-pub-8069899346555474/8925200694</string>
+    <string name="ford_banner">ca-app-pub-8069899346555474/6107465669</string>
+    <string name="honda_banner">ca-app-pub-8069899346555474/3289730636</string>
+    <string name="hyundai_banner">ca-app-pub-8069899346555474/5206529106</string>
+    <string name="nissan_banner">ca-app-pub-8069899346555474/1285743191</string>
+    <string name="peugeot_banner">ca-app-pub-8069899346555474/8781089835</string>
+    <string name="renault_banner">ca-app-pub-8069899346555474/7029912519</string>
+    <string name="toyota_banner">ca-app-pub-8069899346555474/6136467391</string>
+    <string name="volkswagen_banner">ca-app-pub-8069899346555474/9711028123</string>
+    <string name="avaliar_banner">ca-app-pub-8069899346555474/9169824842</string>
+    <string name="maisApps_banner">ca-app-pub-8069899346555474/1099763139</string>
+
+
     <string name="app_name">Meu Carro Novo</string>
     <string name="open">open</string>
     <string name="close">close</string>

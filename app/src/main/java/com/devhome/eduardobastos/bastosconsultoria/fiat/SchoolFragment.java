@@ -23,6 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.devhome.eduardobastos.bastosconsultoria.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import mehdi.sakout.aboutpage.AboutPage;
 
@@ -35,9 +38,13 @@ public class SchoolFragment extends Fragment  {
     private SchoolViewModel schoolViewModel;
     private Spinner spinner;
     private ImageView imageView;
+    private AdView bannerAd;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
+        MobileAds.initialize(getContext(), "@string/fiat_banner");
 
         schoolViewModel =
                 ViewModelProviders.of(this).get(SchoolViewModel.class);
@@ -47,6 +54,10 @@ public class SchoolFragment extends Fragment  {
         spinner = root.findViewById(R.id.veiculosFiat_spinner);
 
         imageView = root.findViewById(R.id.imageVeiculo);
+
+        bannerAd = root.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        bannerAd.loadAd(adRequest);
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
@@ -63,7 +74,11 @@ public class SchoolFragment extends Fragment  {
                 switch (position) {
 
                     case 0:
-                        //Toast.makeText(parent.getContext(), "AGILE SELECIONADO", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(parent.getContext(), "NENHUM MODELO SELECIONADO",
+                                Toast.LENGTH_LONG).show();
+
+                        imageView.setImageResource(R.drawable.vazio);
+
                         break;
 
                     case 1:

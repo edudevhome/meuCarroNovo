@@ -46,7 +46,7 @@ public class SettingsFragment extends Fragment  {
                              ViewGroup container, Bundle savedInstanceState) {
 
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
-        MobileAds.initialize(getContext(), "ca-app-pub-3940256099942544/6300978111");
+        MobileAds.initialize(getContext(), "@string/avaliar_banner");
 
         settingsViewModel =
                 ViewModelProviders.of(this).get(SettingsViewModel.class);
@@ -66,7 +66,7 @@ public class SettingsFragment extends Fragment  {
         imageStar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://play.google.com/store/apps/developer?id=Eduardo+Bastos");
+                Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=com.devhome.eduardobastos.bastosconsultoria");
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);

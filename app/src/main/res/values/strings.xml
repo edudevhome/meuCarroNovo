@@ -1,5 +1,29 @@
 <resources>
 
+    <!--AdMob Sample Id  ca-app-pub-3940256099942544~3347511713
+    SampleBanner  ca-app-pub-3940256099942544/6300978111
+
+
+
+
+    <string name="appId">ca-app-pub-8069899346555474~2861505166</string>
+    <string name="chevrolet_banner">ca-app-pub-8069899346555474/4304510977</string>
+    <string name="fiat_banner">ca-app-pub-8069899346555474/8925200694</string>
+    <string name="ford_banner">ca-app-pub-8069899346555474/6107465669</string>
+    <string name="honda_banner">ca-app-pub-8069899346555474/3289730636</string>
+    <string name="hyundai_banner">ca-app-pub-8069899346555474/5206529106</string>
+    <string name="nissan_banner">ca-app-pub-8069899346555474/1285743191</string>
+    <string name="peugeot_banner">ca-app-pub-8069899346555474/8781089835</string>
+    <string name="renault_banner">ca-app-pub-8069899346555474/7029912519</string>
+    <string name="toyota_banner">ca-app-pub-8069899346555474/6136467391</string>
+    <string name="volkswagen_banner">ca-app-pub-8069899346555474/9711028123</string>
+    <string name="avaliar_banner">ca-app-pub-8069899346555474/9169824842</string>
+    <string name="maisApps_banner">ca-app-pub-8069899346555474/1099763139</string>
+
+
+
+    -->
+
     <string name="appId">ca-app-pub-8069899346555474~2861505166</string>
     <string name="chevrolet_banner">ca-app-pub-8069899346555474/4304510977</string>
     <string name="fiat_banner">ca-app-pub-8069899346555474/8925200694</string>
@@ -30,7 +54,6 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
@@ -55,7 +78,6 @@
         <item>Spin</item>
         <item>Spin Activ</item>
     </string-array>
-
 
 
     <string-array name="veiculosFiat_array">
@@ -132,26 +154,25 @@
 
     </string-array>
 
-        <string-array name="veiculosFord_array">
+    <string-array name="veiculosFord_array">
 
 
-            <item>Selecione o modelo do veículo!</item>
-            <item>FIESTA ROCAM</item>
-            <item>FOCUS</item>
-            <item>KA</item>
-            <item>KA SEDAN</item>
-            <item>NEW FIESTA</item>
-            <item>NEW FIESTA SEDAN</item>
+        <item>Selecione o modelo do veículo!</item>
+        <item>FIESTA ROCAM</item>
+        <item>FOCUS</item>
+        <item>KA</item>
+        <item>KA SEDAN</item>
+        <item>NEW FIESTA</item>
+        <item>NEW FIESTA SEDAN</item>
 
-        </string-array>
-
+    </string-array>
 
 
     <string-array name="veiculosHonda_array">
         <item>Selecione o modelo do veículo!</item>
-            <item>FIT</item>
-            <item>FIT TWIST</item>
-            <item>WR-V</item>
+        <item>FIT</item>
+        <item>FIT TWIST</item>
+        <item>WR-V</item>
 
 
     </string-array>
@@ -171,8 +192,6 @@
     </string-array>
 
 
-
-
     <string-array name="veiculosPeugeot_array">
         <item>Selecione o modelo do veículo!</item>
         <item>PEUGEOT 208</item>
@@ -181,8 +200,6 @@
 
 
     </string-array>
-
-
 
 
     <string-array name="veiculosRenault_array">
@@ -200,8 +217,7 @@
     </string-array>
 
 
-
-        <string-array name="veiculosToyota_array">
+    <string-array name="veiculosToyota_array">
 
         <item>Selecione o modelo do veículo!</item>
         <item>ETIOS HATCH</item>
@@ -227,6 +243,7 @@
 
 
     </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
 </resources>

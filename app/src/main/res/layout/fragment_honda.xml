@@ -34,7 +34,7 @@
 
     <TextView
         android:id="@+id/text_honda"
-        android:layout_width="299dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -44,7 +44,7 @@
         android:text="Toque no veículo para acessar o Manual do Proprietário"
         android:textAlignment="center"
         android:textColor="#F80A0A0A"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,8 +72,7 @@
         app:adUnitId="@string/honda_banner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageVeiculo">
+        app:layout_constraintStart_toStartOf="parent">
 
     </com.google.android.gms.ads.AdView>
 

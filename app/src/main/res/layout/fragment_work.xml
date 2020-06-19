@@ -35,7 +35,7 @@
 
     <TextView
         android:id="@+id/text_work"
-        android:layout_width="299dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -45,7 +45,7 @@
         android:text="Toque no veículo para acessar o Manual do Proprietário"
         android:textAlignment="center"
         android:textColor="#F80A0A0A"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,13 +70,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
         ads:adSize="SMART_BANNER"
         app:adUnitId="@string/ford_banner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageVeiculo">
+        app:layout_constraintStart_toStartOf="parent">
 
     </com.google.android.gms.ads.AdView>
 

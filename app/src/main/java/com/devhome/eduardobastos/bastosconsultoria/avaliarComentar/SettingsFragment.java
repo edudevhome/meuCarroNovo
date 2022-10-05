@@ -57,7 +57,7 @@ public class SettingsFragment extends Fragment  {
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
 
-        spinner = root.findViewById(R.id.veiculosVolkswagen_spinner);
+        //spinner = root.findViewById(R.id.veiculosVolkswagen_spinner);
 
         //imageView = root.findViewById(R.id.imageVeiculo);
         imageStar = root.findViewById(R.id.imageAvaliar);
@@ -75,9 +75,9 @@ public class SettingsFragment extends Fragment  {
 
 
 
-                return root;
+        return root;
 
 
     }
 
-    }
+}

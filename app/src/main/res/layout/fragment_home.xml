@@ -11,9 +11,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/whiteColor"
         android:orientation="vertical">
 
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,6 +33,7 @@
                 android:layout_height="150dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="30dp"
+                android:onClick="onHonda"
                 android:src="@drawable/honda" />
 
 
@@ -64,6 +70,21 @@
 
         </LinearLayout>
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            app:adSize="SMART_BANNER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            app:adUnitId="@string/home_banner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </com.google.android.gms.ads.AdView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -87,6 +108,8 @@
                 android:src="@drawable/hynn" />
         </LinearLayout>
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -106,6 +129,21 @@
                 android:layout_height="150dp"
                 android:src="@drawable/volkswagen" />
         </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            app:adSize="SMART_BANNER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            app:adUnitId="@string/home_banner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </com.google.android.gms.ads.AdView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -130,6 +168,8 @@
                 android:layout_marginBottom="10dp"
                 android:src="@drawable/renault" />
         </LinearLayout>
+
+
 
 
     </LinearLayout>

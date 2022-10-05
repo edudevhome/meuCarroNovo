@@ -82,11 +82,11 @@ public class HomeFragment extends Fragment {
     }
 
 
-    public void onHonda(View view) {
+    /*public void onHonda(View view) {
         Intent intent = new Intent( getActivity(), MainActivity.class);
 
         startActivity(intent);
-    }
+    }*/
 }
 
 
